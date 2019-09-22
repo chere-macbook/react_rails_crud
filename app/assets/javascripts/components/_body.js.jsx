@@ -60,7 +60,7 @@ class Body extends React.Component{
     let body = JSON.stringify({question: {question_type: question_type,
       question:  question,
       frequency: frequency } })
-    fetch('http://localhost:3000/api/v1/questions', {
+    fetch('/api/v1/questions', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
